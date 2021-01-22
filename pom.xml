@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.fourdkelvin.framework</groupId>
-    <artifactId>spring-mix</artifactId>
+    <artifactId>spring-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-mix</name>
+    <name>spring-web</name>
     <description>Redis Elasticsearch Mybatis mix for Spring Boot Template</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -79,5 +79,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
