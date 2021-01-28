@@ -28,9 +28,9 @@
         <!--生成Model类存放位置-->
         <javaModelGenerator targetPackage="com.fourdkelvin.framework.model" targetProject="src/main/java"/>
         <!-- 生成mapxml文件 -->
-        <sqlMapGenerator targetPackage="mappers" targetProject="src/main/resources"/>
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
         <!-- 生成mapxml对应client，也就是接口dao -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.fourdkelvin.framework.model.mapper" targetProject="src/main/java"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.fourdkelvin.framework.mapper" targetProject="src/main/java"/>
         <!--生成全部表tableName设为%-->
         <table tableName="%"/>
 

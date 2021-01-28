@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.fourdkelvin.framework")
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 public class SpringMixWebApplication extends SpringBootServletInitializer {
     @Override
