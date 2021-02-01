@@ -3,7 +3,6 @@
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-    <properties resource="application-${env}.properties"/>
     <!--defaultModelType="flat" 大数据字段，不分表 -->
     <context id="MySqlContext" targetRuntime="MyBatis3" defaultModelType="flat">
         <property name="autoDelimitKeywords" value="true"/>
@@ -19,11 +18,11 @@
             <property name="suppressDate" value="true"/> <!-- 是否生成注释代时间戳-->
         </commentGenerator>
         <!--数据库链接地址账号密码-->
-        <jdbcConnection driverClass="${spring.datasource.driver}"
-                        connectionURL="${spring.datasource.url}"
-                        userId="${spring.datasource.username}"
-                        password="${spring.datasource.password}">
-            <property name="nullCatalogMeansCurrent" value="true" />
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/spring-mix?serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true"
+                        userId="root"
+                        password="Test,.1234">
+            <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
         <!--生成Model类存放位置-->
         <javaModelGenerator targetPackage="com.fourdkelvin.framework.model" targetProject="src/main/java"/>
