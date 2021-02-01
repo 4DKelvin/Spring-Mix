@@ -1,6 +1,6 @@
 spring:
-    datasource:
-      username: root
-      password: Test,.1234
+  profiles:
+    active: @env@ #这个必须和pom中自定义字段意义
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
